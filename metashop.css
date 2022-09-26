@@ -1,0 +1,683 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+ }
+
+.navbar {
+    overflow: hidden;
+    background: white;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.d {
+    float: left;
+    overflow: hidden;
+}
+
+.d .d-btn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background: inherit;
+
+}
+
+.navbar a:hover,
+.d:hover .d-btn{
+    background: lightgray;
+    border-bottom: solid darkblue;
+}
+
+.d-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+.d:hover .d-content {
+    display: block;
+}
+
+.column {
+    float: left;
+    width:20%;
+    padding: 10px;
+    height: 350px;
+}
+.column1{
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 330px;
+
+}
+.column2{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 330px;
+
+}
+
+.column a,.column1 a,.column2 a{
+    display: block;
+    float: none;
+    color:black;
+    text-align: left;
+
+}
+
+.column h3,.column1 h3,column2 h3{
+    color: black;
+    padding: 10px;
+}
+
+.column a,.column1 a,.column2 a:hover{
+    color: black;
+}
+
+.row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+@media(max-width: 650px) {
+    .column,.column1,.column2{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.right {
+    float: right;
+    display: inline;
+    margin-right: 80px;
+}
+.left{
+    float: left;
+    display: inline;
+
+}
+.bag:hover{
+    border-bottom: solid darkblue;
+}
+.bag{
+    float: right;
+    margin: 10px 20px;
+}
+
+
+
+#videoContent {
+    position: relative;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+#videoContent1 {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+
+}
+
+
+.content {
+    position: absolute;
+    top: 400px;
+    left: 250px;
+    width: 1300px;
+    font-size: 50px;
+    color: transparent;
+    transition: all 0.5s;
+
+}
+
+.content:hover {
+    color: darkblue;
+    cursor: pointer;
+}
+
+.up h1 {
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    font-size: 100px;
+    color: transparent;
+    transition: all 0.5s;
+}
+
+.up h1:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#metah2 {
+    position: relative;
+    top: -600px;
+    left: 300px;
+    font-size: 100px;
+    color: transparent;
+    transition: all 0.5s;
+    
+}
+
+#metah2:hover {
+    color: white;
+    cursor: pointer;
+
+}
+
+.metap {
+    position: relative;
+    top: -600px;
+    left: 350px;
+    font-size: 50px;
+    color: transparent;
+    transition: all 0.5s;
+    margin-bottom: -400px;
+    
+
+}
+
+.metap:hover {
+    color: darkblue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.community{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: whitesmoke;
+
+}
+.heading{
+    height: 300px;
+    text-align: center; 
+    background-color: whitesmoke;
+
+
+}
+.heading a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+.heading a:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.commsection{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    background-color: whitesmoke;
+
+}
+.commsection a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+.commsection a:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+
+.comms1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+
+           
+}
+.comms1:hover{
+    box-shadow: 10px 10px 5px black;
+    cursor: pointer;
+
+}
+.comms2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+     border: 1px solid black;
+
+    
+}
+.comms2:hover{
+    box-shadow: 10px 10px 5px black;
+    cursor: pointer;
+
+}
+
+
+.comms3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+
+}
+.comms3:hover{
+    box-shadow: 10px 10px 5px black;
+    cursor: pointer;
+
+}
+.action {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+
+}
+
+.actup a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.actmid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+}
+
+.actright {
+    width: 45%;
+}
+
+.actleft {
+
+    width: 45%;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    background-color: rgb(28, 43, 51);
+}
+
+.actleft a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.actright img {
+    width: 720px;
+}
+
+.actdown {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: whitesmoke;
+
+}
+
+.actdleft {
+    background-color: lightgrey;
+    width: 30%;
+    display: flex;
+    box-shadow: 10px;
+}
+.actdleft:hover{
+    box-shadow: 10px 10px 5px black;
+
+}
+
+
+.actdright {
+    background-color: lightgrey;
+    width: 33%;
+    display: flex;
+
+}
+.actdright:hover{
+    box-shadow: 10px 10px 5px black;
+
+}
+
+.actdleft h2 {
+    margin-top: 60px;
+}
+
+.actdright h2 {
+    margin-top: 60px;
+}
+
+.actdown a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+    position: relative;
+    top: 58px;
+    left: 10px;
+
+}
+
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.news a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.news a:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.news img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.news1 {
+    width: 20%;
+    margin-left: 1%;
+
+}
+.news1 img{
+    width: 300px;
+}
+.news2 img{
+    width: 300px;
+}
+.news3 img{
+    width: 300px;
+}
+
+.news1 p {
+    word-wrap: break-word;
+}
+
+.news2 {
+    width: 20%;
+    margin-left: 1%;
+}
+
+.news2 p {
+    word-wrap: break-word;
+}
+
+.news3 {
+    width: 20%;
+    margin-left: 1%;
+}
+
+.news3 p {
+    word-wrap: break-word;
+}
+
+.update{
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(92, 92, 92);
+
+}
+
+.update2 h3{
+    text-decoration:underline;
+    
+    
+}
+.update2 p a{
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+    
+}
+.update2 p a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+
+}
+
+.services ul li{
+    list-style: none;
+
+}
+.service1 ul li a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+.service1 ul li a:hover {
+    color: grey;
+}
+
+
+
+.service2 ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.service2 ul li a:hover {
+    color: grey;
+}
+
+
+.service3 ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.service3 ul li a:hover {
+    color: grey;
+}
+
+
+
+.follow img:hover {
+    border-radius: 10px;
+    background-color: lightgrey;
+    width: 60px;
+    cursor: pointer;
+}
+
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: whitesmoke;
+
+
+}
+
+#detail {
+    background-color: transparent;
+    height: 0px;
+}
+
+.footright details p {
+    position: relative;
+    top: -320px;
+
+}
+.metaup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+
+
+}
+
+.metaup a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+.metaup a:hover {
+    color: grey;
+    cursor: pointer;
+}
+.metaup h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.metadown {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.metadown img{
+
+    width: 150px;
+}
+.metadleft {
+    background-color: lightgrey;
+    width: 30%;
+    display: flex;
+    box-shadow: 10px;
+}
+.metadleft:hover{
+    box-shadow: 10px 10px 5px black;
+
+}
+
+
+.metadright {
+    background-color: lightgrey;
+    width: 33%;
+    display: flex;
+
+}
+.metadright:hover{
+    box-shadow: 10px 10px 5px black;
+
+}
+
+.metadleft h2 {
+    margin-top: 60px;
+}
+
+.metadright h2 {
+    margin-top: 60px;
+}
+
+.metadown a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+    position: relative;
+    top: 58px;
+    left: 10px;
+
+}
+
+.shopping{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:20px 0 20px 0px;
+}
+.shop1:hover{
+    box-shadow: 10px 10px 5px black;
+
+}
+.shop2:hover{
+    box-shadow: 10px 10px 5px black;
+
+}
+.shop3:hover{
+    box-shadow: 10px 10px 5px black;
+
+}
+.shop4:hover{
+    box-shadow: 10px 10px 5px black;
+
+}
+
+.shopd{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.imghide{
+    opacity:0;
+    position: relative;
+    top:-450px;
+    left:550px;
+    margin-bottom: -200px;
+    
+}
+
+.imghide:hover {
+    opacity: 1;
+    cursor: pointer;
+}
